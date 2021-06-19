@@ -114,6 +114,117 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	background-color: #d2dfef;
+	color:#8a97a0;<!DOCTYPE html>
+<div class="form-style-1">
+<form>
+    <fieldset>
+        <legend>Request Form</legend>
+  
+        </br>
+        </br>
+        </br>
+        	Your First Name*
+            <input type="text" name="field1" placeholder="Howard">
+            	</br>
+                </br>
+            Your Email and/or Phone Number
+            <input type="email" name="field2" placeholder="ex: howardheart@gmail.com">
+            	</br>
+                </br>
+            Your Age*
+            <input type="number" name="field3" placeholder="13">
+            	</br>
+                </br>
+            Your Request: Be Specific! Include a link if posible.*
+            <textarea name="field4" placeholder="What are you requesting?"></textarea>  
+	   			</br>
+                </br>
+             Cultural Considerations   
+            <textarea name="field5" placeholder="Things like your hair type, primary language, etc."></textarea>  
+	    		</br>
+                </br>
+             Is this request urgent/time-sensitive? If so, enter a due date. 
+            <input type="datetime" name="field6" placeholder="MM/DD/YYYY">
+            
+            <hr>
+            
+            </br>
+             Caseworker's Name &amp; Branch*
+            <input type="text" name="field1" placeholder="John, ODHS Gresham">
+            	</br>
+                </br>
+             Caseworker's Phone Number*
+            <input type="phone" name="field1" placeholder="(###)-###-###">
+            	</br>
+                </br>
+             Caseworker's Email*
+            <input type="phone" name="field1" placeholder="ex: howardheart@gmail.com">
+            	</br>
+                </br>
+     </fieldset>
+     	</br>
+    <fieldset>
+<input type="Submit" value="Submit" />
+     </fieldset>
+</form>
+</div>
+</html>
+
+<style type="text/css">
+.form-style-1{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #8eb0d6;
+	margin: 10px auto;
+	padding: 20px;
+	background: #8eb0d6;
+	border-radius: 8px;
+	font-family: Trocchi, slab-serif;
+    
+}
+.form-style-1 fieldset{
+	border: none;
+}
+.form-style-1 legend {
+	font-size: 2.1em;
+	margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    }
+.form-style-1 warning {
+	font-size: 1em;
+	margin-bottom: 10x;
+    text-align: center;
+    color: #FFFFFF;
+}
+.form-style-1 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-1 input[type="text"],
+.form-style-1 input[type="date"],
+.form-style-1 input[type="datetime"],
+.form-style-1 input[type="email"],
+.form-style-1 input[type="number"],
+.form-style-1 input[type="search"],
+.form-style-1 input[type="time"],
+.form-style-1 input[type="url"],
+.form-style-1 input[type="phone"],
+.form-style-1 textarea,
+.form-style-1 select {
+	font-family: Trocchi, slab-serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #d2dfef;
 	color:#8a97a0;
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
