@@ -18,9 +18,11 @@
     </fieldset>
     <fieldset>
 <input type="Submit" value="Submit" />
+     </fieldset>
 </form>
 </div>
 </html>
+
 <style type="text/css">
 .form-style-1{
 	max-width: 500px;
