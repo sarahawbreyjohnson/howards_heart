@@ -1,92 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script>
-            function TeenRequest() {
-                var name = 
-                    document.forms["TeenRequest"]["Name"];
-                var email = 
-                    document.forms["TeenRequest"]["EMail"];
-                var phone = 
-                    document.forms["TeenRequest"]["Phone"];
-                var what = 
-                    document.forms["TeenRequest"]["Subject"];
-  
-                if (name.value == "") {
-                    window.alert("Please enter your name.");
-                    name.focus();
-                    return false;
-                }
-  
-                if (email.value == "") {
-                    window.alert(
-                      "Please enter your e-mail address.");
-                    email.focus();
-                    return false;
-                }
-  
-                if (phone.value == "") {
-                    window.alert(
-                      "Please enter your phone number.");
-                    phone.focus();
-                    return false;
-                }
-  
-                if (what.selectedIndex < 1) {
-                    alert("What are you requesting?");
-                    what.focus();
-                    return false;
-                }
-  
-                return true;
-            }
-        </script>
-  
-        <style>
-            div {
-                box-sizing: border-box;
-                width: 100%;
-                border: 100px solid black;
-                float: left;
-                align-content: center;
-                align-items: center;
-            }
-  
-            form {
-                margin: 0 auto;
-                width: 600px;
-            }
-        </style>
-    </head>
-  
-    <body>
-        <h1 style="text-align: center;">REGISTRATION FORM</h1>
-        <form name="RegForm" action="/submit.php" 
-              onsubmit="return GEEKFORGEEKS()" method="post">
-              
-            <p>Name: <input type="text" 
-                            size="65" name="Name" /></p>
-                            
-            <br />
-            
-            <p>E-mail Address: <input type="text" 
-                            size="65" name="EMail" /></p>
-                            
-            <br />
-            
-            <p>Phone Number: <input type="text" 
-                        size="65" name="Phone Number" /></p>
-                        
-            <br />
-            <br />
-            <p>Request: <textarea cols="55" 
-                              name="Request"> </textarea></p>
-            <p>
-                <input type="submit" 
-                       value="send" name="Submit" />
-                <input type="reset" 
-                       value="Reset" name="Reset" />
-            </p>
-        </form>
-    </body>
+<div class="form-style-1">
+<form>
+    <fieldset>
+        <legend><span class="number"></span>Request Form</legend>
+        </br>
+        </br>
+            <input type="text" name="field1" placeholder="Your Name *">
+            	</br>
+                </br>
+            <input type="email" name="field2" placeholder="Your Email *">
+            	</br>
+                </br>
+            <input type="phone" name="field3" placeholder="Your Phone">
+            	</br>
+                </br>
+            <textarea name="field4" placeholder="What are you requesting?"></textarea>  
+    </fieldset>
+    <fieldset>
+<input type="Submit" value="Submit" />
+</form>
+</div>
 </html>
+<style type="text/css">
+.form-style-1{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #8eb0d6;
+	margin: 10px auto;
+	padding: 20px;
+	background: #8eb0d6;
+	border-radius: 8px;
+	font-family: Trocchi, slab-serif;
+    
+}
+.form-style-1 fieldset{
+	border: none;
+}
+.form-style-1 legend {
+	font-size: 2.1em;
+	margin-bottom: 10px;
+    color: #FFFFFF;
+}
+.form-style-1 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-1 input[type="text"],
+.form-style-1 input[type="date"],
+.form-style-1 input[type="datetime"],
+.form-style-1 input[type="email"],
+.form-style-1 input[type="number"],
+.form-style-1 input[type="search"],
+.form-style-1 input[type="time"],
+.form-style-1 input[type="url"],
+.form-style-1 input[type="phone"],
+.form-style-1 textarea,
+.form-style-1 select {
+	font-family: Trocchi, slab-serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #d2dfef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+.form-style-1 input[type="Submit"],
+.form-style-1 input[type="button"]
+{
+	position: center;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #2c3f5f;
+    font-family: Trocchi, slab-serif;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 30%;
+	border: 1px solid #2c3f5f;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-1 input[type="submit"]:hover,
+.form-style-1 input[type="button"]:hover
+{
+	background: #109177;
+}
+</style>
