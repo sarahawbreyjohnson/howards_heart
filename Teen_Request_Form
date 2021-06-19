@@ -2,20 +2,56 @@
 <div class="form-style-1">
 <form>
     <fieldset>
-        <legend><span class="number"></span>Request Form</legend>
+        <legend>Request Form</legend>
+  
         </br>
         </br>
-            <input type="text" name="field1" placeholder="Your Name *">
+        </br>
+        	Your First Name*
+            <input type="text" name="field1" placeholder="Howard">
             	</br>
                 </br>
-            <input type="email" name="field2" placeholder="Your Email *">
+            Your Email and/or Phone Number
+            <input type="email" name="field2" placeholder="ex: howardheart@gmail.com">
             	</br>
                 </br>
-            <input type="phone" name="field3" placeholder="Your Phone">
+            Your Age*
+            <input type="number" name="field3" placeholder="13">
             	</br>
                 </br>
+            Your Request: Be Specific! Include a link if posible.*
             <textarea name="field4" placeholder="What are you requesting?"></textarea>  
+	   			</br>
+                </br>
+             Cultural Considerations   
+            <textarea name="field5" placeholder="Things like your hair type, primary language, etc."></textarea>  
+	    		</br>
+                </br>
+             Is this request urgent/time-sensitive? If so, enter a due date. 
+            <input type="datetime" name="field6" placeholder="MM/DD/YYYY">
+            
+            <hr>
+            
+            </br>
+             Caseworker's Name &amp; Branch*
+            <input type="text" name="field1" placeholder="John, ODHS Gresham">
+            	</br>
+                </br>
+             Caseworker's Phone Number*
+            <input type="phone" name="field1" placeholder="(###)-###-###">
+            	</br>
+                </br>
+             Caseworker's Email*
+            <input type="phone" name="field1" placeholder="ex: howardheart@gmail.com">
+            	</br>
+                </br>
     </fieldset>
+         
+        
+     <fieldset>
+       <warning>Please allow up to two weeks for your request to be processed. If this request is urgent, please mark a due date below.</warning>
+     </fieldset>
+     	</br>
     <fieldset>
 <input type="Submit" value="Submit" />
      </fieldset>
@@ -41,6 +77,13 @@
 .form-style-1 legend {
 	font-size: 2.1em;
 	margin-bottom: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    }
+.form-style-1 warning {
+	font-size: 1em;
+	margin-bottom: 10x;
+    text-align: center;
     color: #FFFFFF;
 }
 .form-style-1 label {
