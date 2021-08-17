@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <div class="form-style-1">
 <form>
+<form method="post" action="requestform.php">
+  <textarea name="message">
     <fieldset>
         <legend>Request Form</legend>
   
@@ -55,6 +57,7 @@
     <fieldset>
 <input type="Submit" value="Submit" />
      </fieldset>
+   </textarea>
 </form>
 </div>
 </html>
@@ -169,6 +172,13 @@
 </form>
 </div>
 </html>
+
+<?php
+if($_POST["Message"]) {
+mail("jennifer@howardsheart.org", "Special Request",
+$_POST["Insert Your Message"]. "From: connect@howardsheart.org");
+}
+?>
 
 <style type="text/css">
 .form-style-1{
